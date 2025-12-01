@@ -1,6 +1,7 @@
 .header {
     padding-top: 24px;
-    padding-bottom: 32px;
+    padding-bottom: 24px;
+    background-color: #032D68;
 
     &_container {
         padding: 0 20px;
@@ -18,12 +19,53 @@
         gap: 4px;
 
         &--title {
-            font-family: Montserrat;
+            font-family: "Archivo Black";
             font-weight: 120%;
             font-style: normal;
             font-size: 24px;
             line-height: 36px;
-            color: #1111;
+            color: #ffffff;
+        }
+    }
+
+    &_right {
+        display: flex;
+        gap: 137px;
+
+        &--list {
+            position: fixed;
+            z-index: 10;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 3px;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            &--link {
+                font-family: "Archivo Black";
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 16px;
+                padding-top: 14px;
+                letter-spacing: -2%;
+                color: #c0b5b5;
+                transition: 0.3s ease-in-out;
+                cursor: pointer;
+
+                &:hover {
+                    color: #e0e0e0;
+                    transition: 0.3s ease-in-out;
+                }
+            }
         }
     }
 }

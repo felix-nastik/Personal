@@ -9,7 +9,8 @@
 
 .header {
   padding-top: 24px;
-  padding-bottom: 32px;
+  padding-bottom: 24px;
+  background-color: #032D68;
 }
 .header_container {
   padding: 0 20px;
@@ -26,10 +27,46 @@
   gap: 4px;
 }
 .header_left--title {
-  font-family: Montserrat;
+  font-family: "Archivo Black";
   font-weight: 120%;
   font-style: normal;
   font-size: 24px;
   line-height: 36px;
-  color: rgba(17, 17, 17, 0.0666666667);
+  color: #ffffff;
+}
+.header_right {
+  display: flex;
+  gap: 137px;
+}
+.header_right--list {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.header_right--list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.header_right--list--link {
+  font-family: "Archivo Black";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 16px;
+  padding-top: 14px;
+  letter-spacing: -2%;
+  color: #c0b5b5;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.header_right--list--link:hover {
+  color: #e0e0e0;
+  transition: 0.3s ease-in-out;
 }/*# sourceMappingURL=style.css.map */
