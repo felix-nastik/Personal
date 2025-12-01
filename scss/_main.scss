@@ -1,0 +1,29 @@
+.main {
+    padding-top: 20px;
+    background-color: #032D68;
+
+    &_container {
+        padding: 0 20px;
+        margin: 0 auto;
+        max-width: 1136px;
+        width: 100%;
+    }
+
+    &_first {
+        &--content {
+            display: flex;
+
+            &--title {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: "Archivo Black";
+                font-weight: 1136px;
+                font-size: 124px;
+                // line-height: 124px;
+                color: #ffffff;
+            }
+        }
+    }
+
+}
